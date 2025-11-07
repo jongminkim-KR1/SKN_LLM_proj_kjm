@@ -1,0 +1,37 @@
+{
+  "collection_date": "2025-11-03 22:53:59",
+  "season": 2025,
+  "total_teams": 5,
+  "teams": [
+    {
+      "name": "Los Angeles Dodgers",
+      "pitchers": 18,
+      "batters": 15,
+      "total": 33
+    },
+    {
+      "name": "San Diego Padres",
+      "pitchers": 19,
+      "batters": 14,
+      "total": 33
+    },
+    {
+      "name": "Arizona Diamondbacks",
+      "pitchers": 21,
+      "batters": 15,
+      "total": 36
+    },
+    {
+      "name": "San Francisco Giants",
+      "pitchers": 19,
+      "batters": 18,
+      "total": 37
+    },
+    {
+      "name": "Colorado Rockies",
+      "pitchers": 19,
+      "batters": 17,
+      "total": 36
+    }
+  ]
+}
