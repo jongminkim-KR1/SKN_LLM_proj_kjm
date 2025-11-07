@@ -525,7 +525,7 @@ def setup_team_lineup(team_data, team_key):
 
 
 def start_game():
-    st.session_state.game_state = GameState(st.session_state.away_team_name, st.session_state.home_team_name, start_inning=7)
+    st.session_state.game_state = GameState(st.session_state.away_team_name, st.session_state.home_team_name)
 
     # 모든 투수를 불펜으로 (선발 제외)
     home_pitchers = st.session_state.home_team_data['pitchers']

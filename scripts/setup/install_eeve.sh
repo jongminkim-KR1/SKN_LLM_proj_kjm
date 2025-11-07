@@ -6,6 +6,12 @@ SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 PROJECT_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
 cd "$PROJECT_ROOT"
 
+# GPU 설정
+echo "=== GPU 설정 ==="
+export CUDA_VISIBLE_DEVICES=0
+export OLLAMA_NUM_GPU=1
+echo "GPU 0번 사용 설정 완료"
+
 echo "=== Hugging Face CLI 설치 ==="
 pip install --user huggingface-hub
 export PATH="$HOME/.local/bin:$PATH"
@@ -40,6 +46,8 @@ SYSTEM """당신은 MLB 전문 야구 코치입니다.
 
 PARAMETER stop <s>
 PARAMETER stop </s>
+PARAMETER num_gpu 99
+PARAMETER num_thread 4
 EOF
 
 echo "=== EEVE 모델 등록 중 ==="

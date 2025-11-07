@@ -5,12 +5,12 @@ from typing import Dict
 
 
 class GameState:
-    def __init__(self, away_team: str, home_team: str, start_inning: int = 7):
+    def __init__(self, away_team: str, home_team: str):
         self.home_team = home_team
         self.away_team = away_team
         self.home_score = 0
         self.away_score = 0
-        self.inning = start_inning
+        self.inning = 7
         self.is_bottom = False
         self.outs = 0
         self.balls = 0
